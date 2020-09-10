@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Login
+{% endblock titulo %}
+
+{% block conteudo %}
+<div><input type="text" value="E-mail ou login">E-mail ou login</div>
+<div><input type="password">Senha</div>
+<div>
+<a href="{% url 'criar_conta' %}">
+    <button type="submit">
+    CADASTRAR
+    </button>
+</a>
+</div>
+<div><a href="#">
+    <button type="submit" >
+    ENTRAR
+    </button>
+</a></div>
+{% endblock conteudo %}
